@@ -1,8 +1,10 @@
 package classandobjects;
 
-public class Bird {
+public class Bird extends Animal{
 
-	public void fly() {
-		
+	public Bird(int age, String gender, int weightInLbs) {
+		super(age, gender, weightInLbs);
 	}
+	
+
 }

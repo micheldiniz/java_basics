@@ -18,12 +18,8 @@ public class Animal {
 		System.out.println("eating...");
 	}
 	
-	public void walk() {
-		System.out.println("walk...");
-	}
-	
-	public void work() {
-		System.out.println("working...");
+	public void sleep() {
+		System.out.println("sleep...");
 	}
 	
 }
