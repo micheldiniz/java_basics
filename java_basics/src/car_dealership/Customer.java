@@ -1,10 +1,18 @@
 package car_dealership;
 
-public class Customer {
+public class Customer implements Comparable<Customer>{
 
 	private String name;
 	private String address;
 	private double cashOnHand;
+
+	
+	public Customer(double d) {
+		this.cashOnHand = d;
+	}
+
+	public Customer() {
+	}
 
 	public String getName() {
 		return name;
@@ -35,5 +43,16 @@ public class Customer {
 		emp.handleCustomer(this, finance, vehicle);
 		
 
+	}
+
+	@Override
+	public int compareTo(Customer o) {
+		if(cashOnHand < o.getCashOnHand()) {
+			return 1;
+		}else if(cashOnHand > o.getCashOnHand()) {
+			return -1;
+		}else {
+			return 0;
+		}		
 	}
 }
