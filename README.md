@@ -31,5 +31,6 @@ Study table of contents:
 
 ## Referências
 
+ - [The Java™ Tutorials](https://docs.oracle.com/javase/tutorial/jndi/objects/serial.html)
  - [The Complete Java Certification Course](https://www.udemy.com/course/master-practical-java-development/)
 
