@@ -1,4 +1,4 @@
-package com.java_basics.generics;
+package com.java_basics.lecture31.generics;
 
 public class Container<i1, i2> {
 

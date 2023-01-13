@@ -33,4 +33,8 @@ Study table of contents:
 
  - [The Java™ Tutorials](https://docs.oracle.com/javase/tutorial/jndi/objects/serial.html)
  - [The Complete Java Certification Course](https://www.udemy.com/course/master-practical-java-development/)
+ - [Difference between <? super T> and <? extends T> in Java]( https://stackoverflow.com/questions/4343202/difference-between-super-t-and-extends-t-in-java)
+ - [Lecture: Effective java - wildCards for API Flexibility](https://www.youtube.com/watch?v=V1vQf4qyMXg&t=1344s)
+ - [Java Generics](https://www.baeldung.com/java-generics-vs-extends-object)
+
 

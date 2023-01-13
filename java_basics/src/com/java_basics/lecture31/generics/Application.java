@@ -1,4 +1,4 @@
-package com.java_basics.generics;
+package com.java_basics.lecture31.generics;
 
 import java.util.ArrayList;
 import java.util.HashSet;
