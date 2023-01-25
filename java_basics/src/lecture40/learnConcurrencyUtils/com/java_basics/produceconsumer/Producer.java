@@ -13,19 +13,17 @@ public class Producer implements Runnable {
 
 	@Override
 	public void run() {
-		try {
-			synchronized (this) {
-				questionQueue.put(getNextQuestion());
+		while (!questionQueue.contains(50)) {
+			try {
+				synchronized (this) {
+					int nextQuestion = questionNo++;
+					System.out.println("Got new Question: " + nextQuestion);
+					questionQueue.put(nextQuestion);
+				}
+			} catch (InterruptedException e) {
+				e.printStackTrace();
 			}
-		} catch (InterruptedException e) {
-			e.printStackTrace();
 		}
-	}
-
-	private synchronized int getNextQuestion() {
-		int nextQuestion = questionNo++;
-		System.out.println("Got new Question: " + nextQuestion);
-		return nextQuestion;
 	}
 
 }
