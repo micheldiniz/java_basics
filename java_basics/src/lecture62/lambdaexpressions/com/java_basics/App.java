@@ -6,6 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -76,6 +77,10 @@ public class App {
 			.filter(x -> Integer.parseInt(x[1].trim()) > 15)
 			.forEach(x -> System.out.println(x[0].trim() + " " + x[3].trim()));
 		rows2.close();
+	
+		String teste = "109.821.547-80";
+		boolean matches = Pattern.compile("\\d{3}.\\d{3}.\\d{3}-\\d{2}").matcher(teste).find();
+		System.out.println("Matches: " + matches);
 		
 	}
 

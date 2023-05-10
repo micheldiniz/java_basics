@@ -30,9 +30,17 @@ public class PrimitiveVariables {
 		Integer notBoxedX = Integer.valueOf(x);
 		
 		
+		int z = 0;
+		int y = 1;
+		int A = 2;
+
+//		System.out.println(y++ + ++z - --A);
+		A = (y++ + ++z - --A) + ++y;
+		System.out.println("Valor de A: " + A);
 		
 
 		
 	}
 
 }
+
